@@ -1,7 +1,10 @@
 package org.ruler;
 
 public enum Unit {
-    MILE(12 * 3 * 1760), YARD(12 * 3), FEET(12), INCH(1);
+    INCH(1),
+    FEET(12 * INCH.value),
+    YARD(3 * FEET.value),
+    MILE(1760 * YARD.value);
 
     private int value;
 
