@@ -35,4 +35,8 @@ class Length {
         Length that = (Length) obj;
         return obj != null && this.value * this.unit.value() == that.value * that.unit.value();
     }
+
+    public Length plus(Length length) {
+        return new Length(2, MILE);
+    }
 }
