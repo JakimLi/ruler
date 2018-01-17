@@ -25,3 +25,25 @@ null != 3 Yard done
 1760 Yard == 1 Mile done
 1761 Yard != 1 Mile done
 ```
+
+Build Feet And Inch
+===================
+
+```
+3 Feet != null  done
+null != 3 Feet  done
+3 Feet == 3 Feet  done
+3 Feet != 2 Feet  done
+3 Feet != 4 Feet  done
+
+3 Inch != null  done
+null != 3 Inch  done
+3 Inch == 3 Inch  done
+3 Inch != 2 Inch  done
+3 Inch != 4 Inch  done
+
+1 Yard == 3 Feet 
+1 Feet != 12 Inch
+1 Mile == 5280 Feet
+1 Mile != 63360 Inch
+```
