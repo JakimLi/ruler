@@ -51,3 +51,10 @@ null != 3 Inch  done
 Better API
 ==========
 private the constructor of Length done
+
+
+Length addition
+===============
+1 Mile + 1 Mile = 2 Mile
+13 Inch + 11 Inch = 2 Feet
+3 Feet + 2 Yard = 3 Yard
