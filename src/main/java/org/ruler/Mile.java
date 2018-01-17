@@ -8,6 +8,6 @@ class Mile extends Length {
 
     @Override
     protected int value() {
-        return 1760 * this.value;
+        return 1760 * 3 * this.value;
     }
 }
