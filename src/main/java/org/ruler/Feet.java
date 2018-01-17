@@ -7,6 +7,6 @@ class Feet extends Length {
 
     @Override
     protected int value() {
-        return value;
+        return 12 * value;
     }
 }

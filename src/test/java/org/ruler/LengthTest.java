@@ -31,4 +31,9 @@ public class LengthTest {
     public void one_yard_equals_three_feet() throws Exception {
         assertEquals(new Yard(1), new Feet(3));
     }
+
+    @Test
+    public void one_feet_equals_12_inch() throws Exception {
+        assertEquals(new Feet(1), new Inch(12));
+    }
 }
