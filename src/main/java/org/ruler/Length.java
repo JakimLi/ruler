@@ -1,17 +1,17 @@
 package org.ruler;
 
-class Length {
+abstract class Length {
     protected int value;
 
     Length(int value) {
         this.value = value;
     }
 
+    abstract protected int value();
+
     @Override
     public boolean equals(Object obj) {
-        if (this instanceof Mile && obj instanceof Yard) {
-            return this.value * 1760 == ((Yard) obj).value;
-        }
-        return obj != null && value == ((Length) obj).value;
+        Length that = (Length) obj;
+        return obj != null && value * this.value() == that.value * that.value();
     }
 }

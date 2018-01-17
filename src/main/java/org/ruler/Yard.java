@@ -5,4 +5,9 @@ class Yard extends Length {
     Yard(int value) {
         super(value);
     }
+
+    @Override
+    protected int value() {
+        return 1;
+    }
 }
