@@ -8,6 +8,6 @@ class Yard extends Length {
 
     @Override
     protected int value() {
-        return 1;
+        return value;
     }
 }

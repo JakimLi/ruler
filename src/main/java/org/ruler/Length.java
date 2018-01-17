@@ -1,7 +1,7 @@
 package org.ruler;
 
 abstract class Length {
-    private int value;
+    protected int value;
 
     Length(int value) {
         this.value = value;
@@ -12,6 +12,6 @@ abstract class Length {
     @Override
     public boolean equals(Object obj) {
         Length that = (Length) obj;
-        return obj != null && value * this.value() == that.value * that.value();
+        return obj != null && this.value() == that.value();
     }
 }
