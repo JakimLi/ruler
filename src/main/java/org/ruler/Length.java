@@ -37,6 +37,7 @@ class Length {
     }
 
     public Length plus(Length length) {
-        return new Length(2, MILE);
+        int value = this.value * this.unit.value() + length.value * length.unit.value();
+        return new Length(value, INCH);
     }
 }
