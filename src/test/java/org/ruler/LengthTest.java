@@ -21,4 +21,9 @@ public class LengthTest {
     public void test_1760_yard_equals_1_mile() throws Exception {
         assertEquals(new Yard(1760), new Mile(1));
     }
+
+    @Test
+    public void test_1761_yard_not_equals_1_mile() throws Exception {
+        assertNotEquals(new Yard(1761), new Mile(1));
+    }
 }

@@ -23,5 +23,5 @@ null != 3 Yard done
 1 Mile == 1760 Yard done
 1 Mile != 1761 Yard done
 1760 Yard == 1 Mile done
-1761 Yard != 1 Mile
+1761 Yard != 1 Mile done
 ```
