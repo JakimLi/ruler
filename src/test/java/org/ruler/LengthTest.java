@@ -4,46 +4,50 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
+import static org.ruler.Length.feet;
+import static org.ruler.Length.inch;
+import static org.ruler.Length.mile;
+import static org.ruler.Length.yard;
 
 public class LengthTest {
 
     @Test
     public void one_mile_equals_1760_yard() throws Exception {
-        assertEquals(new Mile(1), new Yard(1760));
+        assertEquals(mile(1), yard(1760));
     }
 
     @Test
     public void one_mile_not_equal_1761_yard() throws Exception {
-        assertNotEquals(new Mile(1), new Yard(1761));
+        assertNotEquals(mile(1), yard(1761));
     }
 
     @Test
     public void test_1760_yard_equals_1_mile() throws Exception {
-        assertEquals(new Yard(1760), new Mile(1));
+        assertEquals(yard(1760), mile(1));
     }
 
     @Test
     public void test_1761_yard_not_equals_1_mile() throws Exception {
-        assertNotEquals(new Yard(1761), new Mile(1));
+        assertNotEquals(yard(1761), mile(1));
     }
 
     @Test
     public void one_yard_equals_three_feet() throws Exception {
-        assertEquals(new Yard(1), new Feet(3));
+        assertEquals(yard(1), feet(3));
     }
 
     @Test
     public void one_feet_equals_12_inch() throws Exception {
-        assertEquals(new Feet(1), new Inch(12));
+        assertEquals(feet(1), inch(12));
     }
 
     @Test
     public void one_mile_equals_5280_feet() throws Exception {
-        assertEquals(new Mile(1), new Feet(5280));
+        assertEquals(mile(1), feet(5280));
     }
 
     @Test
     public void one_mile_equals_63360_inch() throws Exception {
-        assertEquals(new Mile(1), new Inch(63360));
+        assertEquals(mile(1), inch(63360));
     }
 }

@@ -45,5 +45,9 @@ null != 3 Inch  done
 1 Yard == 3 Feet  done
 1 Feet != 12 Inch done
 1 Mile == 5280 Feet done
-1 Mile == 63360 Inch
+1 Mile == 63360 Inch done
 ```
+
+Better API
+==========
+private the constructor of Length done
