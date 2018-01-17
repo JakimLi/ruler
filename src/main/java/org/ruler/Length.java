@@ -14,19 +14,19 @@ class Length {
         this.unit = unit;
     }
 
-    public static Length mile(int value) {
+    static Length mile(int value) {
         return new Length(value, MILE);
     }
 
-    public static Length yard(int value) {
+    static Length yard(int value) {
         return new Length(value, YARD);
     }
 
-    public static Length feet(int value) {
+    static Length feet(int value) {
         return new Length(value, FEET);
     }
 
-    public static Length inch(int value) {
+    static Length inch(int value) {
         return new Length(value, INCH);
     }
 
