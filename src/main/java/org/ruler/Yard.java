@@ -1,7 +1,17 @@
 package org.ruler;
 
-/**
- * Created by Jakim Li on 1/17/18.
- */
-public class Yard {
+class Yard {
+    private int value;
+
+    Yard(int value) {
+        this.value = value;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        return value == ((Yard) obj).value;
+    }
 }
