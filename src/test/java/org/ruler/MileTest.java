@@ -17,4 +17,9 @@ public class MileTest {
         assertNotEquals(new Mile(3), new Mile(4));
         assertNotEquals(new Mile(3), new Mile(2));
     }
+
+    @Test
+    public void three_mile_not_equal_to_null() throws Exception {
+        assertNotEquals(new Mile(3), null);
+    }
 }
