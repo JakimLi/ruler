@@ -10,7 +10,7 @@ class Length {
     @Override
     public boolean equals(Object obj) {
         if (this instanceof Mile && obj instanceof Yard) {
-            return true;
+            return this.value * 1760 == ((Yard) obj).value;
         }
         return obj != null && value == ((Length) obj).value;
     }
