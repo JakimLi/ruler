@@ -1,7 +1,7 @@
 package org.ruler;
 
 abstract class Length {
-    protected int value;
+    private int value;
 
     Length(int value) {
         this.value = value;
