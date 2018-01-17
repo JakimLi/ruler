@@ -32,12 +32,14 @@ class Length {
 
     @Override
     public boolean equals(Object obj) {
-        Length that = (Length) obj;
-        return obj != null && this.value * this.unit.value() == that.value * that.unit.value();
+        return obj != null && value() == ((Length) obj).value();
+    }
+
+    private int value() {
+        return this.value * this.unit.value();
     }
 
     public Length plus(Length length) {
-        int value = this.value * this.unit.value() + length.value * length.unit.value();
-        return new Length(value, INCH);
+        return new Length(value() + length.value(), INCH);
     }
 }
