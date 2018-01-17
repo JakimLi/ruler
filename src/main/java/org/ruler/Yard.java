@@ -1,17 +1,8 @@
 package org.ruler;
 
-class Yard {
-    private int value;
+class Yard extends Length {
 
     Yard(int value) {
-        this.value = value;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == null) {
-            return false;
-        }
-        return value == ((Yard) obj).value;
+        super(value);
     }
 }
