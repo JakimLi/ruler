@@ -12,6 +12,27 @@ import static org.ruler.Length.yard;
 public class LengthTest {
 
     @Test
+    public void length_with_same_type_has_same_value_should_equal() throws Exception {
+        assertEquals(mile(3), mile(3));
+    }
+
+    @Test
+    public void length_with_same_type_has_different_value_should_not_equal() throws Exception {
+        assertNotEquals(mile(3), mile(4));
+        assertNotEquals(mile(3), mile(2));
+    }
+
+    @Test
+    public void length_not_equals_to_null() throws Exception {
+        assertNotEquals(mile(3), null);
+    }
+
+    @Test
+    public void null_not_equal_to_length() throws Exception {
+        assertNotEquals(null, mile(3));
+    }
+
+    @Test
     public void one_mile_equals_1760_yard() throws Exception {
         assertEquals(mile(1), yard(1760));
     }
