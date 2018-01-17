@@ -39,7 +39,7 @@ class Length {
         return this.value * this.unit.value();
     }
 
-    public Length plus(Length length) {
+    Length plus(Length length) {
         return new Length(value() + length.value(), INCH);
     }
 }
