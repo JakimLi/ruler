@@ -36,4 +36,9 @@ public class LengthTest {
     public void one_feet_equals_12_inch() throws Exception {
         assertEquals(new Feet(1), new Inch(12));
     }
+
+    @Test
+    public void one_mile_equals_5280_feet() throws Exception {
+        assertEquals(new Mile(1), new Feet(5280));
+    }
 }
